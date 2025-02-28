@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Doc</title>
+	<style>
+		*{overflow:hidden;}
+		body {
+			margin:20px 20px;
+			background-color: tomato;
+			background: linear-gradient(45deg,red,pink,red);
+
+		}
+
+		body::before {
+    			content: '';
+    			position: absolute;
+    			top: 0;
+    			left: 0;
+    			width: 100%;
+    			height: 100%;
+    			background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb, #f6d365);
+    			background-size: 500% 500%;
+    			z-index: -1;
+    			animation: multiColorBackground 3s ease-in-out infinite;
+		}
+		
+		@keyframes multiColorBackground {
+    			0% {
+        			background-position: 0% 0%;
+    			}
+    			25% {
+        			background-position: 100% 0%;
+    			}
+    			50% {
+        			background-position: 100% 100%;
+    			}
+    			75% {
+        			background-position: 0% 100%;
+    			}
+    			100% {
+        			background-position: 0% 0%;
+    			}
+		}
+
+
+		.container {
+			display: flex;
+			width: 100%;
+			height:105vh;
+
+		}
+		
+		.sidebar{
+			background-color:aqua;
+			height:90%;
+		}
+
+		.sidebar::before {
+    			content: '';
+    			position: absolute;
+    			top: 0;
+    			left: 0;
+    			width: 100%;
+    			height: 100%;
+    			background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb, #f6d365);
+    			background-size: 500% 500%;
+    			z-index: -1;
+    			animation: multiColorBackground 3s ease-in-out infinite;
+		}
+		
+		.main {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			height: 90%;
+		}
+
+		iframe {
+			flex: 1;
+			height:100%;
+			width: 100%;
+			border: none;
+			overflow:hidden;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<iframe src="topframe.html" name="top" scrolling="no"></iframe>
+		</div>
+		<div class="main">
+			<iframe src="mainframe.html" name="main"></iframe>
+		</div>
+	</div>
+
+</body>
+</html>
