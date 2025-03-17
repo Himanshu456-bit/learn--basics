@@ -1,0 +1,46 @@
+*{font-family: dubai;}
+
+body{
+    border:35px solid tomato;
+    padding:0px;
+    margin:0px;
+}
+
+h1,#p1{
+    text-align: center;
+}
+
+#tx{
+    text-align: end;
+    
+}
+
+table{
+    margin-left:130px;
+    margin-right:250px;
+}
+
+button{
+    background-color: tomato;
+    color: white;
+    border:1px solid tomato;
+    padding-left:150px;
+    padding-right: 150px;
+    margin-bottom: 15px;
+    margin-top:25px;
+    font-size: 35px;
+    border-radius:25px;
+}
+
+
+select{
+    width:100%;
+}
+
+textarea{
+    width:97%;
+}
+
+#bbz{
+    text-align: center;
+}
