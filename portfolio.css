@@ -1,0 +1,310 @@
+*{
+    font-family:dubai;
+}
+
+body{
+    background-color:black;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    margin:0;
+}
+
+.btn{
+    text-align: end;
+    margin-right:10px;
+}
+
+.light{
+    background-color:white;
+    color:black;
+    transition: all 0.3s ease;
+}
+
+.dark{
+    background-color: black;
+    color:white;
+    transition:all 0.3s ease;
+}
+
+.dark-st{
+    background-image:linear-gradient(45deg,purple,coral,white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    transition:all 0.3s ease;
+}
+
+.light-st{
+    background-image:linear-gradient(45deg,white,red,brown);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    transition:all 0.3s ease;
+}
+
+#DLbtn{
+    background-image:linear-gradient(45deg,grey,white);
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.main{
+    margin-left:250px;
+    margin-right:250px;
+}
+
+.end{
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size:20px;
+    padding:20px;
+}
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:white;
+}
+
+.top img{
+    border-radius:50px;
+    height:35px;
+}
+
+.st{
+    align-items:baseline;
+    margin-top:50px;
+    font-size:50px;
+    margin-left:10px;
+}
+
+.grp{
+    color:white;
+}
+
+.dark-head{
+    font-size:20px;
+    color:black;
+    border-radius: 12px;
+    padding:2px;
+    text-align: center;
+    background-image: linear-gradient(45deg,white,silver,grey);
+    transition: all 0.3s ease;
+}
+
+.dark-proj{
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    margin-right:8px;
+    background-image:linear-gradient(45deg,#343a40, #6cace4, #d1c4e9);
+    transition: all 0.3s ease;
+}
+
+.light-proj{
+    display:flex;
+    justify-content: flex-start;
+    color:black;
+    padding:5px;
+    border-radius: 5px;
+    margin-right:8px;
+    background-image:linear-gradient(45deg,#70e3b9, #f8efbc,white);
+    transition:all 0.3s ease;
+}
+
+.light-head{
+    font-size:20px;
+    color:white;
+    border-radius: 12px;
+    padding:2px;
+    text-align: center;
+    background-image: linear-gradient(45deg,rgb(99, 25, 25),brown,white);
+    transition: all 0.3s ease;
+}
+
+.bio #cont{
+    font-size:20px;
+    text-align:justify;
+    border-radius: 12px;
+    padding:10px;
+}
+
+.skills div{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.abc b{
+    display:flex;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    margin-left:30px;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color:tomato;
+    transition: all 0.3s ease;
+}
+
+img{
+    border:3.5px solid white;
+    padding:5px;
+    border-radius:8px;
+    box-shadow:5px 0px 0px 0px rgb(0,0,0);
+    margin-right:5px;
+}
+
+.myp{
+    align-items:center;
+}
+
+.seq-dark{
+    margin-top:15px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-image:linear-gradient(45deg, #cc5500, #ff6f61, #3e2723);
+    border-radius:8px;
+    margin-right:570px;
+    transition: all 0.3s ease;
+}
+
+.seq-light{
+    margin-top:15px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-image:linear-gradient(45deg,black,grey,silver);
+    border-radius:8px;
+    margin-right:570px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive designs */
+@media (max-width: 360px) {
+    .main {
+        margin: 0;
+    }
+    .end {
+        font-size: 4vw; /* Scalable font size for small screens */
+    }
+    .top img {
+        height: 10vw;
+    }
+    .st {
+        font-size: 8vw;
+        margin-top: 10vh;
+    }
+    .p1, .p2, .p3, .p4, .p5 {
+        margin: 0;
+    }
+    .head1, #head2, #head3,#head4 {
+        font-size: 5vw;
+    }
+    .abc p {
+        display: flex;
+        padding: 1vh;
+        font-size: 6px; /* Ensures the p elements take full width and wrap when necessary */
+        margin-right:2px;
+        flex-wrap:wrap;
+    }
+    .abc {
+        display: flex;
+        flex-wrap: wrap;  /* Allow wrapping of p elements when the space is too small */
+    }
+}
+
+@media (max-width: 512px) {
+    .main {
+        margin: 0;
+    }
+    .bio, .skills, .myp {
+        margin: 0;
+    }
+    .p1, .p2, .p3, .p4, .p5 {
+        margin: 0;
+    }
+    .top {
+        display: block;
+        text-align: center;
+    }
+    .head1, #head2, #head3,#head4 {
+        margin-right: 0;
+    }
+    .abc p {
+        padding: 1vh;
+        font-size: 6px;
+        flex: 1 1 100%;  /* Ensures p elements take full width and wrap to new lines */
+    }
+    .abc {
+        display: flex;
+        flex-wrap: wrap;  /* Allow wrapping of p elements when the space is too small */
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin: 0;
+    }
+    .bio, .skills, .myp {
+        margin: 0;
+    }
+    .p1, .p2, .p3, .p4, .p5 {
+        margin-top: 7px;
+    }
+    .top {
+        display: block;
+        text-align: center;
+    }
+    .head1, #head2, #head3,#head4 {
+        margin-right: 0;
+    }
+    .abc p {
+        padding: 0;
+        align-items: center;
+        font-size: 12px;
+        flex: 1 1 100%;  /* Ensure each p element takes full width on small screens */
+    }
+    .abc {
+        display: flex;
+        flex-wrap: wrap;  /* Allow wrapping of p elements when the space is too small */
+    }
+}
+
+@media (max-width: 1280px) {
+    .main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .bio, .skills, .myp {
+        margin-right: 2vw;
+    }
+    .p1, .p2, .p3, .p4, .p5 {
+        margin-right: auto;
+    }
+    .top {
+        display: block;
+        text-align: center;
+    }
+    .head1, #head2, #head3,#head4 {
+        margin-right: 0;
+    }
+    .abc p {
+        padding: 1vh;
+    }
+    .abc {
+        display: flex;
+        flex-wrap: wrap;  /* Allow wrapping of p elements when the space is too small */
+    }
+}
