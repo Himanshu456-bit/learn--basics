@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Create Your Portfolio</h1>
+            <!-- User inputs for portfolio details -->
+            <form id="portfolioForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" placeholder="Write a short bio"></textarea>
+
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" placeholder="e.g., HTML, CSS, JavaScript">
+
+                <label for="projects">Projects (comma separated):</label>
+                <input type="text" id="projects" placeholder="e.g., Project 1, Project 2">
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" placeholder="e.g., email@example.com">
+
+		<label for="educ">Educational Qualifications:</label>
+		<input type="text" id="educ" placeholder="school, college">
+
+                <label for="template">Select Template:</label>
+                <select id="template">
+                    <option value="template1">Template 1</option>
+                    <option value="template2">Template 2</option>
+                    <option value="template3">Template 3</option>
+                    <!-- Add more templates here -->
+                </select>
+
+                <button type="button" id="previewButton">Preview Portfolio</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="sample.js"></script>
+</body>
+</html>
