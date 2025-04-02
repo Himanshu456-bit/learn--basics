@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" type="image/x-icon" href="code.png">
+    <title>CodeRush</title>
+</head>
+<body>
+    <div class="topbar">
+        <div id="t1">
+            <img src="code.png" height="70px">
+            <div class="title">CodeRush</div>
+        </div>
+    </div>
+    
+    <div></div>
+    <div class="intro">
+        <b>Get Ready to Test Your Coding Genius!
+            Think you've got what it takes to master programming languages? This is your chance to prove it! Dive into a quiz designed for true coding enthusiasts, where you'll tackle 15 tough multiple-choice questions across a language of your choice. Whether you’re a Python pro or a JavaScript wizard, this quiz will put your knowledge to the ultimate test.
+            But here's the kicker—time is not on your side! You've got 25 minutes to answer everything before the clock runs out. Every second counts, so stay sharp and think fast as the timer ticks away!
+            All you need to do is fill in your details, choose your language, and let the challenge begin. Are you ready to rise to the occasion? Let's find out if you have what it takes!</b>
+    </div>
+    
+    <div class="det">
+        <form>
+            <table>
+                <tr>
+                    <td id="el1">
+                        First Name: 
+                    </td>
+                    <td>
+                        <input id="fn" type="text" name="fname" placeholder="Enter First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="el2">
+                        Last Name: 
+                    </td>
+                    <td>
+                        <input id="ln" type="text" name="lname" placeholder="Enter Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="el3">
+                        Age: 
+                    </td>
+                    <td>
+                        <input id="age" type="number" name="age" placeholder="Enter Age">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="el4">
+                        Select Language: 
+                    </td>
+                    <td>
+                        <select id="lang">
+                            <option value="None">Select</option>
+                            <option value="C">C</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="JAVA">JAVA</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Python">Python</option>
+                            <option value="MySQL">MySQL</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+ 
+    <div id="btn">
+        <button type="submit" id="st" onclick="myFunc()">Start Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
