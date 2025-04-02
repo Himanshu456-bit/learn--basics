@@ -1,0 +1,25 @@
+/* Color        HEX 	   RGB	       */
+
+/* white   -> #ffffff rgb(255,255,255) */
+/* silver  -> #c0c0c0 rgb(192,192,192) */
+/* Gray    -> #808080 rgb(128,128,128) */
+/* black   -> #000000 rgb(0,0,0)       */
+/* red     -> #ff0000 rgb(255,0,0)     */
+/* Maroon  -> #800000 rgb(128,0,0)     */
+/* Yellow  -> #ffff00 rgb(255,255,0)   */
+/* Olive   -> #808088 rgb(128,128,0)   */
+/* lime    -> #00ff00 rgb(0,255,0)     */
+/* green   -> #008000 rgb(0,128,0)     */
+/* aqua    -> #00ffff rgb(0,255,255)   */
+/* teal    -> #008080 rgb(0,128,128)   */
+/* blue    -> #0000ff rgb(0,0,255)     */
+/* navy    -> #000080 rgb(0,0,128)     */
+/* fuchsia -> #ff00ff rgb(255,0,255)   */
+/* purple  -> #800080 rgb(128,0,128)   */
+
+/* HSL hue saturation lightness */
+
+/* hsl(hue,saturation,lightness) */
+/* hue        -> 0 to 360   */
+/* saturation -> 0% to 100% */
+/* lightness  -> 0% to 100% */
