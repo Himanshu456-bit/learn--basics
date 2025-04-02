@@ -1,0 +1,83 @@
+img{
+    border-radius: 50px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    margin:0px;
+    padding:0px;
+}
+
+.topbar{
+    padding:8px;
+}
+
+.intro{
+    color:white;
+    background-color:black;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding:8px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px #888888;
+    font-family:dubai;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#el1,#el2,#el3,#el4{
+    text-align: end;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+td{
+    font-family: dubai;
+}
+
+input,select{
+    padding:5px;
+    border-radius:9px;
+    border:2px ridge black;
+}
+
+#t1{
+    font-family:fantasy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+}
+
+#btn{
+    text-align: center;
+}
+
+#st{
+    cursor: pointer;
+    font-family:fantasy;
+    background-color: aqua;
+    border:5px outset black;
+    border-radius: 12px;
+    font-size: 40px;
+    transition: all 0.5s ease;
+}
+
+#st:hover{
+    cursor: pointer;
+    font-family:fantasy;
+    background-color:yellow;
+    border:5px outset black;
+    border-radius: 12px;
+    font-size: 40px;
+    transition: all 0.5s ease;
+    transform: scale(1.04);
+}
+
+
