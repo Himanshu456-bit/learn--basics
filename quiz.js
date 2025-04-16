@@ -22,6 +22,6 @@ function myFunc(){
     }else if(lang=='MySQL'){
         window.location.href = 'mysq.html';
     }else if(lang=='None'){
-        window.alert("Please select a Language to continue");
+        alert("Please select a language to continue");
     }
 }
