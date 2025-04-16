@@ -1,25 +1,27 @@
 img{
     border-radius: 50px;
+    height: 10vh;
 }
-
 body{
-    background-repeat: no-repeat;
     background-size: auto 100vh;
-    margin:0px;
-    padding:0px;
 }
-
-.topbar{
+.title,.topbar{
     padding:8px;
+    font-size: 65px;
 }
-
+.title{
+    background-image: linear-gradient(45deg,black,rgb(147, 46, 46),red,white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
 .intro{
     color:white;
     background-color:black;
     text-align: justify;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding:8px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding:12px;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px #888888;
     font-family:dubai;
@@ -39,6 +41,7 @@ form{
 
 td{
     font-family: dubai;
+    font-weight: bold;
 }
 
 input,select{
@@ -63,9 +66,9 @@ input,select{
     cursor: pointer;
     font-family:fantasy;
     background-color: aqua;
-    border:5px outset black;
+    border:5px outset aqua;
     border-radius: 12px;
-    font-size: 40px;
+    font-size: 50px;
     transition: all 0.5s ease;
 }
 
@@ -73,11 +76,9 @@ input,select{
     cursor: pointer;
     font-family:fantasy;
     background-color:yellow;
-    border:5px outset black;
+    border:5px outset yellow;
     border-radius: 12px;
     font-size: 40px;
     transition: all 0.5s ease;
-    transform: scale(1.04);
+    transform: scale(1.06);
 }
-
-
