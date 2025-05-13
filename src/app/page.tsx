@@ -65,7 +65,7 @@ export default function PixelPlannerPage() {
   return (
     <div className="min-h-screen bg-background text-foreground p-4 md:p-8 flex flex-col items-center selection:bg-accent selection:text-accent-foreground">
       <Clock /> {/* Added Clock component */}
-      <header className="w-full max-w-2xl mb-6 text-center pt-16 sm:pt-8"> {/* Added padding top to avoid overlap with clock */}
+      <header className="w-full max-w-2xl mb-6 text-center p-2 pt-16 sm:pt-8"> {/* Added padding top to avoid overlap with clock */}
         {/* Optional: Pixel art logo here */}
         {/* <Image src="https://picsum.photos/100/50" alt="Pixel Planner Logo" width={100} height={50} className="mx-auto mb-2 pixelated" data-ai-hint="pixel logo" /> */}
         <h1 className="text-4xl md:text-5xl font-bold text-primary pixel-shadow" style={{ WebkitTextStroke: '1px hsl(var(--border))', paintOrder: 'stroke fill' }}>
