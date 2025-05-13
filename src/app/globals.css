@@ -92,10 +92,10 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-[hsl(var(--border))];
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
     font-family: var(--font-geist-mono), monospace;
   }
   img, svg {
@@ -122,16 +122,15 @@ body {
      border-color: hsl(var(--border)) !important;
   }
    .pixel-input {
-    @apply bg-input border-border border-2 text-[hsl(var(--input-foreground))] placeholder:text-muted-foreground focus:ring-ring focus:ring-2 focus:border-primary;
+    @apply bg-[hsl(var(--input))] border-[hsl(var(--border))] border-2 text-[hsl(var(--input-foreground))] placeholder:text-[hsl(var(--muted-foreground))] focus:ring-[hsl(var(--ring))] focus:ring-2 focus:border-[hsl(var(--primary))];
   }
   .pixel-button {
-    @apply pixel-shadow-sm border-2 border-primary hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
+    @apply pixel-shadow-sm border-2 border-[hsl(var(--primary))] hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
   }
   .pixel-button-secondary {
-     @apply pixel-shadow-sm border-2 border-secondary bg-secondary text-secondary-foreground hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
+     @apply pixel-shadow-sm border-2 border-[hsl(var(--secondary))] bg-[hsl(var(--secondary))] text-[hsl(var(--secondary-foreground))] hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
   }
    .pixel-button-destructive {
-     @apply pixel-shadow-sm border-2 border-destructive bg-destructive text-destructive-foreground hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
+     @apply pixel-shadow-sm border-2 border-[hsl(var(--destructive))] bg-[hsl(var(--destructive))] text-[hsl(var(--destructive-foreground))] hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
   }
 }
-
