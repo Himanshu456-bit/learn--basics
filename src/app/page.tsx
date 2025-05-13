@@ -15,7 +15,6 @@ import { formatDate, getDisplayDate } from '@/lib/date-utils';
 import { PlusSquare, CalendarDays, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image'; 
-import { PixelBackground } from '@/components/PixelBackground'; // Added PixelBackground import
 
 export default function PixelPlannerPage() {
   const [selectedDate, setSelectedDate] = useState(() => new Date());
@@ -64,10 +63,9 @@ export default function PixelPlannerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground p-4 md:p-8 flex flex-col items-center selection:bg-accent selection:text-accent-foreground relative overflow-hidden">
-      <PixelBackground /> {/* Added PixelBackground component */}
+    <div className="min-h-screen bg-background text-foreground p-4 md:p-8 flex flex-col items-center selection:bg-accent selection:text-accent-foreground">
       <Clock /> 
-      <header className="w-full max-w-2xl mb-6 text-center p-2 pt-16 sm:pt-8 relative z-10"> {/* Added relative and z-10 */}
+      <header className="w-full max-w-2xl mb-6 text-center p-2 pt-16 sm:pt-8"> 
         {/* Optional: Pixel art logo here */}
         {/* <Image src="https://picsum.photos/100/50" alt="Pixel Planner Logo" width={100} height={50} className="mx-auto mb-2 pixelated" data-ai-hint="pixel logo" /> */}
         <h1 className="text-4xl md:text-5xl font-bold text-primary pixel-shadow" style={{ WebkitTextStroke: '1px hsl(var(--border))', paintOrder: 'stroke fill' }}>
@@ -76,7 +74,7 @@ export default function PixelPlannerPage() {
         <p className="text-sm text-foreground/80 mt-1">Craft your day, one block at a time!</p>
       </header>
 
-      <main className="w-full max-w-2xl relative z-10"> {/* Added relative and z-10 */}
+      <main className="w-full max-w-2xl"> 
         <section className="mb-6 p-3 bg-card border-2 border-border pixel-shadow-sm rounded-none">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="relative">
@@ -136,9 +134,10 @@ export default function PixelPlannerPage() {
         <SuggestedTasks onAddTask={handleAddSuggestedTask} />
       </main>
 
-      <footer className="w-full max-w-2xl mt-12 text-center text-xs text-muted-foreground relative z-10"> {/* Added relative and z-10 */}
+      <footer className="w-full max-w-2xl mt-12 text-center text-xs text-muted-foreground"> 
         <p>&copy; {new Date().getFullYear()} Pixel Planner. All rights reserved. Built with ☕ and 👾.</p>
       </footer>
     </div>
   );
 }
+
