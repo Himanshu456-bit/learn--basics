@@ -11,24 +11,25 @@ body {
 
 @layer base {
   :root {
-    --background: 260 40% 15%; /* Dark Purple/Indigo */
-    --foreground: 50 50% 90%; /* Pale Yellow/Cream */
-    --card: 260 35% 22%; /* Slightly lighter than background */
-    --card-foreground: 50 50% 90%; /* Pale Yellow/Cream */
-    --popover: 260 38% 18%; /* Darker than card */
-    --popover-foreground: 50 50% 90%; /* Pale Yellow/Cream */
+    --background: 9 100% 64%; /* Tomato */
+    --foreground: 0 0% 100%; /* White for contrast with tomato */
+    --card: 9 90% 70%; /* Lighter Tomato */
+    --card-foreground: 0 0% 0%; /* Black for contrast on lighter tomato */
+    --popover: 9 85% 60%; /* Darker Tomato */
+    --popover-foreground: 0 0% 100%; /* White */
     --primary: 30 95% 60%; /* Bright Orange */
     --primary-foreground: 30 50% 10%; /* Dark Brown/Black */
     --secondary: 330 80% 65%; /* Magenta/Pink */
     --secondary-foreground: 330 30% 95%; /* Light Pink/White */
-    --muted: 260 20% 30%; /* Desaturated version of background or a grey */
-    --muted-foreground: 260 15% 65%; /* Lighter grey */
+    --muted: 9 40% 80%; /* Desaturated Tomato */
+    --muted-foreground: 9 25% 30%; /* Darker Desaturated Tomato */
     --accent: 180 90% 55%; /* Bright Cyan */
     --accent-foreground: 180 70% 10%; /* Dark Cyan/Blue */
     --destructive: 0 80% 60%; /* Bright Red */
     --destructive-foreground: 0 0% 98%; /* White */
-    --border: 260 30% 45%; /* Mid-tone related to background */
-    --input: 260 35% 20%; /* Darker than card, slightly lighter than popover */
+    --border: 9 70% 55%; /* Mid-tone Tomato */
+    --input: 9 90% 75%; /* Lighter than card for input */
+    --input-foreground: 0 0% 0%; /* Black for input text */
     --ring: 30 95% 70%; /* Brighter version of Primary */
     --radius: 0rem; /* For sharp corners */
     --shadow-color: 0 0% 0%; /* Black for pixel shadows */
@@ -39,36 +40,37 @@ body {
     --chart-4: 120 70% 50%;  /* Green */
     --chart-5: 60 90% 60%;   /* Yellow */
     
-    --sidebar-background: 260 38% 18%; /* Same as Popover */
-    --sidebar-foreground: 50 45% 85%; /* Slightly dimmer foreground */
+    --sidebar-background: 9 85% 60%; /* Same as Popover (Darker Tomato) */
+    --sidebar-foreground: 0 0% 100%; /* White */
     --sidebar-primary: 30 95% 60%; /* Primary Orange */
     --sidebar-primary-foreground: 30 50% 10%; /* Primary Orange Foreground */
     --sidebar-accent: 180 90% 55%; /* Accent Cyan */
     --sidebar-accent-foreground: 180 70% 10%; /* Accent Cyan Foreground */
-    --sidebar-border: 260 30% 38%; /* Slightly lighter border */
+    --sidebar-border: 9 70% 50%; /* Slightly darker border than main border */
     --sidebar-ring: 30 95% 70%; /* Ring for primary */
   }
 
   .dark {
-    --background: 260 40% 15%;
-    --foreground: 50 50% 90%;
-    --card: 260 35% 22%;
-    --card-foreground: 50 50% 90%;
-    --popover: 260 38% 18%;
-    --popover-foreground: 50 50% 90%;
-    --primary: 30 95% 60%;
-    --primary-foreground: 30 50% 10%;
-    --secondary: 330 80% 65%;
-    --secondary-foreground: 330 30% 95%;
-    --muted: 260 20% 30%;
-    --muted-foreground: 260 15% 65%;
-    --accent: 180 90% 55%;
-    --accent-foreground: 180 70% 10%;
-    --destructive: 0 80% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 260 30% 45%;
-    --input: 260 35% 20%;
-    --ring: 30 95% 70%;
+    --background: 9 100% 64%; /* Tomato */
+    --foreground: 0 0% 100%; /* White for contrast with tomato */
+    --card: 9 90% 70%; /* Lighter Tomato */
+    --card-foreground: 0 0% 0%; /* Black for contrast on lighter tomato */
+    --popover: 9 85% 60%; /* Darker Tomato */
+    --popover-foreground: 0 0% 100%; /* White */
+    --primary: 30 95% 60%; /* Bright Orange */
+    --primary-foreground: 30 50% 10%; /* Dark Brown/Black */
+    --secondary: 330 80% 65%; /* Magenta/Pink */
+    --secondary-foreground: 330 30% 95%; /* Light Pink/White */
+    --muted: 9 40% 80%; /* Desaturated Tomato */
+    --muted-foreground: 9 25% 30%; /* Darker Desaturated Tomato */
+    --accent: 180 90% 55%; /* Bright Cyan */
+    --accent-foreground: 180 70% 10%; /* Dark Cyan/Blue */
+    --destructive: 0 80% 60%; /* Bright Red */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 9 70% 55%; /* Mid-tone Tomato */
+    --input: 9 90% 75%; /* Lighter than card for input */
+    --input-foreground: 0 0% 0%; /* Black for input text */
+    --ring: 30 95% 70%; /* Brighter version of Primary */
     --shadow-color: 0 0% 0%;
 
     --chart-1: 30 95% 60%;
@@ -77,13 +79,13 @@ body {
     --chart-4: 120 70% 50%;
     --chart-5: 60 90% 60%;
 
-    --sidebar-background: 260 38% 18%;
-    --sidebar-foreground: 50 45% 85%;
+    --sidebar-background: 9 85% 60%;
+    --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 30 95% 60%;
     --sidebar-primary-foreground: 30 50% 10%;
     --sidebar-accent: 180 90% 55%;
     --sidebar-accent-foreground: 180 70% 10%;
-    --sidebar-border: 260 30% 38%;
+    --sidebar-border: 9 70% 50%;
     --sidebar-ring: 30 95% 70%;
   }
 }
@@ -111,7 +113,7 @@ body {
   .pixel-shadow-sm {
     box-shadow: 2px 2px 0px hsl(var(--shadow-color));
   }
-  .pixel-shadow-none { /* Defined the missing class */
+  .pixel-shadow-none {
     box-shadow: none;
   }
   .pixel-border {
@@ -120,7 +122,7 @@ body {
      border-color: hsl(var(--border)) !important;
   }
    .pixel-input {
-    @apply bg-input border-border border-2 placeholder:text-muted-foreground focus:ring-ring focus:ring-2 focus:border-primary;
+    @apply bg-input border-border border-2 text-[hsl(var(--input-foreground))] placeholder:text-muted-foreground focus:ring-ring focus:ring-2 focus:border-primary;
   }
   .pixel-button {
     @apply pixel-shadow-sm border-2 border-primary hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
@@ -132,3 +134,4 @@ body {
      @apply pixel-shadow-sm border-2 border-destructive bg-destructive text-destructive-foreground hover:opacity-80 active:translate-y-px active:translate-x-px active:pixel-shadow-none;
   }
 }
+
